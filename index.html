@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Sticky Navigation Bar | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">Shree Bhagwati PlyWood</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#" class="login">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home">
+
+    <div class="Home12342">
+      <p class="home1">DisCover</p>
+      <p class="home2">Best Furniture</p>
+      <p class="home3">For Your House</p>
+      <p class="home4">We Have 7% more review and customers trust on our furniture quality products.</p>
+    <button class="ho"><a href="#" class="homebtn1">View More</a></button>
+    
+    </div>
+  
+
+
+  </section>
+
+  
+  
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>
